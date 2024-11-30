@@ -1,0 +1,27 @@
+﻿<Window x:Class="NTE_DL.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NTE_DL"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="120" Width="225"
+        WindowStyle="None" AllowsTransparency="True" Background="Transparent">
+    <Grid Background="#242424">
+        <Border Background="#3C3C3C" Height="30" VerticalAlignment="Top" MouseLeftButtonDown="TitleBar_MouseLeftButtonDown">
+            <DockPanel>
+                <TextBlock Text="NTE-DL" VerticalAlignment="Center" Margin="10,0,0,0" Foreground="White" DockPanel.Dock="Left"/>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" DockPanel.Dock="Right">
+                    <Button Background="#3C3C3C" BorderThickness="0" Content="X" Width="30" Click="CloseButton_Click"/>
+                </StackPanel>
+            </DockPanel>
+        </Border>
+        <StackPanel VerticalAlignment="Top" HorizontalAlignment="Stretch" Margin="7,30,7,0">
+            <ComboBox x:Name="DropdownMenu" Width="200" Margin="0,10" MaxDropDownHeight="200"/>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,10">
+                <Button Content="Apply" Width="100" Height="25" Click="ApplyButton_Click" Background="#3c3c3c" Foreground="White"/>
+
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>
